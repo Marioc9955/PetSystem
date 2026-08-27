@@ -1,9 +1,17 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_pet,access_pet,model_vet_pet,,1,1,1,1
-access_appointment,access_appointment,model_vet_appointment,,1,1,1,1
-access_vaccination,access_vaccination,model_vet_vaccination,,1,1,1,1
-access_treatment,access_treatment,model_vet_treatment,,1,1,1,1
-access_prescription,access_prescription,model_vet_prescription,,1,1,1,1
-access_vaccine,access_vaccine,model_vet_vaccine,,1,1,1,1
-access_medicine,access_medicine,model_vet_medicine,,1,1,1,1
-access_prescription_line,access_prescription_line,model_vet_prescription_line,,1,1,1,1
+access_vet_pet_receptionist,vet.pet receptionist,model_vet_pet,group_vet_receptionist,1,1,1,0
+access_vet_appointment_receptionist,vet.appointment receptionist,model_vet_appointment,group_vet_receptionist,1,1,1,0
+access_vet_vaccination_veterinarian,vet.vaccination veterinarian,model_vet_vaccination,group_vet_veterinarian,1,1,1,0
+access_vet_treatment_veterinarian,vet.treatment veterinarian,model_vet_treatment,group_vet_veterinarian,1,1,1,0
+access_vet_prescription_veterinarian,vet.prescription veterinarian,model_vet_prescription,group_vet_veterinarian,1,1,1,0
+access_vet_prescription_line_veterinarian,vet.prescription.line veterinarian,model_vet_prescription_line,group_vet_veterinarian,1,1,1,0
+access_vet_vaccine_veterinarian,vet.vaccine veterinarian,model_vet_vaccine,group_vet_veterinarian,1,0,0,0
+access_vet_medicine_veterinarian,vet.medicine veterinarian,model_vet_medicine,group_vet_veterinarian,1,0,0,0
+access_vet_pet_administrator,vet.pet administrator,model_vet_pet,group_vet_administrator,1,1,1,1
+access_vet_appointment_administrator,vet.appointment administrator,model_vet_appointment,group_vet_administrator,1,1,1,1
+access_vet_vaccination_administrator,vet.vaccination administrator,model_vet_vaccination,group_vet_administrator,1,1,1,1
+access_vet_treatment_administrator,vet.treatment administrator,model_vet_treatment,group_vet_administrator,1,1,1,1
+access_vet_prescription_administrator,vet.prescription administrator,model_vet_prescription,group_vet_administrator,1,1,1,1
+access_vet_prescription_line_administrator,vet.prescription.line administrator,model_vet_prescription_line,group_vet_administrator,1,1,1,1
+access_vet_vaccine_administrator,vet.vaccine administrator,model_vet_vaccine,group_vet_administrator,1,1,1,1
+access_vet_medicine_administrator,vet.medicine administrator,model_vet_medicine,group_vet_administrator,1,1,1,1

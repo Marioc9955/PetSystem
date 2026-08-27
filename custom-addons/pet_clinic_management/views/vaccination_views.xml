@@ -39,5 +39,5 @@
     </record>
 
     <menuitem id="vet_vaccination_menu" name="Vaccinations" parent="vet_clinic_root" action="vet_vaccination_action"
-              groups="base.group_user"/>
+              groups="pet_clinic_management.group_vet_veterinarian"/>
 </odoo>

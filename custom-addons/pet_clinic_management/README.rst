@@ -5,11 +5,13 @@
 Pet Clinic / Veterinary Management
 ==================================
 
-The **Pet Clinic / Veterinary Management** module for Odoo helps efficiently manage pet profiles, appointments, treatments, vaccinations, and prescriptions. Ideal for pet clinics, veterinary hospitals, and animal care centers.
+The **Pet Clinic / Veterinary Management** module for Odoo 19 Community Edition helps efficiently manage pet profiles, appointments, treatments, vaccinations, and prescriptions. Ideal for pet clinics, veterinary hospitals, and animal care centers.
 
 Configuration
 =============
-* No additional configuration required
+* Assign each clinic user one of the Pet Clinic roles in the user access settings: Receptionist, Veterinarian, or Administrator.
+* Receptionists manage pets and appointments. Veterinarians additionally manage clinical records. Administrators manage configuration and deletion.
+* Appointment identifiers are generated automatically from the Pet Clinic Appointment sequence.
 
 License
 -------

@@ -33,5 +33,5 @@
 
     <menuitem id="vet_medicine_menu" name="Medicines"
               parent="vet_config_menu" action="action_vet_medicine"
-              sequence="2" groups="base.group_user"/>
+              sequence="2" groups="pet_clinic_management.group_vet_administrator"/>
 </odoo>

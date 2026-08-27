@@ -45,5 +45,5 @@
     </record>
 
     <menuitem id="vet_prescription_menu" name="Prescriptions" parent="vet_clinic_root" action="vet_prescription_action"
-              groups="base.group_user"/>
+              groups="pet_clinic_management.group_vet_veterinarian"/>
 </odoo>

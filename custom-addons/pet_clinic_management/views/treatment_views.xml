@@ -39,5 +39,5 @@
     </record>
 
     <menuitem id="vet_treatment_menu" name="Treatments" parent="vet_clinic_root" action="vet_treatment_action"
-              groups="base.group_user"/>
+              groups="pet_clinic_management.group_vet_veterinarian"/>
 </odoo>

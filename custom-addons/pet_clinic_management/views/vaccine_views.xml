@@ -32,8 +32,8 @@
     </record>
 
     <menuitem id="vet_config_menu" name="Configuration" parent="vet_clinic_root" sequence="50"
-              groups="base.group_user"/>
+              groups="pet_clinic_management.group_vet_administrator"/>
 
     <menuitem id="vet_vaccine_menu" name="Vaccines" parent="vet_config_menu" action="action_vet_vaccine" sequence="1"
-              groups="base.group_user"/>
+              groups="pet_clinic_management.group_vet_administrator"/>
 </odoo>

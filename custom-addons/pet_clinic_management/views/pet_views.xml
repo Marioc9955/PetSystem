@@ -3,38 +3,33 @@
         <field name="name">vet.pet.kanban</field>
         <field name="model">vet.pet</field>
         <field name="arch" type="xml">
-            <kanban class="o_kanban_example">
+            <kanban sample="1">
                 <field name="name"/>
                 <field name="pet_type"/>
                 <field name="breed"/>
                 <field name="owner_id"/>
                 <field name="image"/>
                 <templates>
-                    <t t-name="kanban-box">
-                        <div class="oe_kanban_card">
-                            <div class="o_kanban_image">
-                                <img t-att-src="kanban_image('vet.pet', 'image', record.id.value)"
-                                     class="img img-fluid rounded-circle" alt="Pet Image"
-                                     style="max-height: 80px; max-width: 80px;"/>
+                    <t t-name="card" class="flex-row">
+                        <aside class="o_kanban_aside_full">
+                            <field name="image" widget="image" class="w-100 h-100"
+                                   options="{'img_class': 'object-fit-cover'}" alt="Pet image"/>
+                        </aside>
+                        <main class="ps-2">
+                            <field name="name" class="fw-bold fs-5"/>
+                            <div>
+                                <span class="text-muted">Type:</span>
+                                <field name="pet_type"/>
                             </div>
-                            <div class="o_kanban_details">
-                                <strong>
-                                    <field name="name"/>
-                                </strong>
-                                <div>
-                                    <span>Type:</span>
-                                    <field name="pet_type"/>
-                                </div>
-                                <div>
-                                    <span>Breed:</span>
-                                    <field name="breed"/>
-                                </div>
-                                <div>
-                                    <span>Owner:</span>
-                                    <field name="owner_id"/>
-                                </div>
+                            <div>
+                                <span class="text-muted">Breed:</span>
+                                <field name="breed"/>
                             </div>
-                        </div>
+                            <div>
+                                <span class="text-muted">Owner:</span>
+                                <field name="owner_id"/>
+                            </div>
+                        </main>
                     </t>
                 </templates>
             </kanban>
@@ -80,6 +75,8 @@
         <field name="view_mode">kanban,list,form</field>
     </record>
 
-    <menuitem id="vet_clinic_root" name="Pet Clinic" groups="base.group_user"/>
-    <menuitem id="vet_pet_menu" name="Pets" parent="vet_clinic_root" action="vet_pet_action" groups="base.group_user"/>
+    <menuitem id="vet_clinic_root" name="Pet Clinic"
+              groups="pet_clinic_management.group_vet_receptionist"/>
+    <menuitem id="vet_pet_menu" name="Pets" parent="vet_clinic_root" action="vet_pet_action"
+              groups="pet_clinic_management.group_vet_receptionist"/>
 </odoo>

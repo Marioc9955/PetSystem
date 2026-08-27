@@ -1,6 +1,6 @@
 {
     'name': 'Pet Clinic Management',
-    'version': '1.0',
+    'version': '19.0.1.0.0',
     'category': 'Services',
     'summary': 'Manage pet clinic appointments, vaccinations, and treatments.',
     'sequence': 1,
@@ -8,7 +8,9 @@
     'website': "https://alantechnologies.in/",
     'depends': ['base'],
     'data': [
+        'security/pet_clinic_security.xml',
         'security/ir.model.access.csv',
+        'data/ir_sequence_data.xml',
         'views/pet_views.xml',
         'views/appointment_views.xml',
         'views/vaccination_views.xml',
