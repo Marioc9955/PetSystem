@@ -2,3 +2,4 @@ odoo-19.0/
 .venv/
 .local/
 odoo.local.conf
+__pycache__/
