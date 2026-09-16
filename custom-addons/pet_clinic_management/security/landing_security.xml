@@ -1,0 +1,29 @@
+<odoo>
+    <!-- These models contain public marketing content only. No clinical ACLs change. -->
+    <record id="access_landing_read" model="ir.model.access">
+        <field name="name">Landing page public read</field><field name="model_id" ref="model_vet_landing_page"/>
+        <field name="perm_read" eval="True"/>
+    </record>
+    <record id="access_landing_block_read" model="ir.model.access">
+        <field name="name">Landing block public read</field><field name="model_id" ref="model_vet_landing_block"/>
+        <field name="perm_read" eval="True"/>
+    </record>
+    <record id="access_landing_admin" model="ir.model.access">
+        <field name="name">Landing page administrator</field><field name="model_id" ref="model_vet_landing_page"/>
+        <field name="group_id" ref="group_vet_administrator"/>
+        <field name="perm_read" eval="True"/><field name="perm_write" eval="True"/><field name="perm_create" eval="True"/><field name="perm_unlink" eval="True"/>
+    </record>
+    <record id="access_landing_block_admin" model="ir.model.access">
+        <field name="name">Landing block administrator</field><field name="model_id" ref="model_vet_landing_block"/>
+        <field name="group_id" ref="group_vet_administrator"/>
+        <field name="perm_read" eval="True"/><field name="perm_write" eval="True"/><field name="perm_create" eval="True"/><field name="perm_unlink" eval="True"/>
+    </record>
+    <record id="rule_landing_publication" model="ir.rule">
+        <field name="name">Landing page publication boundary</field><field name="model_id" ref="model_vet_landing_page"/>
+        <field name="domain_force">[(1, '=', 1)] if user.has_group('pet_clinic_management.group_vet_administrator') else [('is_published', '=', True)]</field>
+    </record>
+    <record id="rule_landing_block_publication" model="ir.rule">
+        <field name="name">Landing block publication boundary</field><field name="model_id" ref="model_vet_landing_block"/>
+        <field name="domain_force">[(1, '=', 1)] if user.has_group('pet_clinic_management.group_vet_administrator') else [('is_published', '=', True), ('page_id.is_published', '=', True)]</field>
+    </record>
+</odoo>

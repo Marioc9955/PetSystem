@@ -1,0 +1,33 @@
+<odoo noupdate="1">
+    <record id="landing_main" model="vet.landing.page">
+        <field name="name">Pet Clinic</field>
+        <field name="hero_image" type="base64" file="pet_clinic_management/static/src/img/pets-hero.png"/>
+    </record>
+    <record id="landing_care" model="vet.landing.block">
+        <field name="page_id" ref="landing_main"/><field name="sequence">10</field>
+        <field name="name">A healthy start</field><field name="icon">heart</field>
+        <field name="body">From first visits to everyday checkups, make room for a lifetime of happy moments.</field>
+    </record>
+    <record id="landing_vaccines" model="vet.landing.block">
+        <field name="page_id" ref="landing_main"/><field name="sequence">20</field>
+        <field name="name">Small steps. Lasting care.</field><field name="icon">plus</field>
+        <field name="body">Talk with our team about vaccinations and a preventive care plan for your pet.</field>
+    </record>
+    <record id="landing_consultations" model="vet.landing.block">
+        <field name="page_id" ref="landing_main"/><field name="sequence">30</field>
+        <field name="name">Here to listen</field>
+        <field name="body">Questions, little worries, or a change you have noticed. Let’s find the next step together.</field>
+    </record>
+    <record id="landing_story" model="vet.landing.block">
+        <field name="page_id" ref="landing_main"/><field name="sequence">40</field><field name="layout">split</field>
+        <field name="name">Big personalities. Gentle care.</field>
+        <field name="body">The enthusiastic greeter. The cautious explorer. The expert napper. Every pet has their own way of being, and deserves care that feels right for them.</field>
+        <field name="button_label">Let’s meet</field><field name="button_url">#contact</field>
+    </record>
+    <record id="landing_banner" model="vet.landing.block">
+        <field name="page_id" ref="landing_main"/><field name="sequence">50</field><field name="layout">banner</field>
+        <field name="name">More tail wags. More good days.</field>
+        <field name="body">A little care today makes space for tomorrow’s adventures.</field>
+        <field name="button_label">Contact the clinic</field><field name="button_url">#contact</field>
+    </record>
+</odoo>

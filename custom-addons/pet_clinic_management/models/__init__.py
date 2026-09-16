@@ -6,3 +6,4 @@ from . import treatment
 from . import vaccine
 from . import medicine
 from . import prescription_line
+from . import landing
