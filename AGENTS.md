@@ -4,7 +4,7 @@ These instructions apply to the repository unless a nested `AGENTS.md` adds comp
 
 ## Purpose and current baseline
 
-PetSystem is a veterinary-clinic product built as an Odoo 19 Community Edition addon. The current `custom-addons/pet_clinic_management/` code is a small Odoo 18-era module with `vet.*` models for pets, appointments, treatments, vaccinations, prescriptions, vaccines, and medicines. It has basic views and ACLs granting full CRUD without a group restriction (although its menus target internal users), but no tests, record rules, translations, migrations, clinic configuration, reminders, or Owl frontend.
+PetSystem is a veterinary-clinic product built as an Odoo 19 Community Edition addon. The current `custom-addons/pet_clinic_management/` code declares version `19.0.1.0.0`, with `vet.*` models for pets, appointments, treatments, vaccinations, prescriptions, vaccines, and medicines. It has standard Odoo views, role-scoped ACLs, a restricted diagnosis field, and appointment/security/view tests. It still lacks record rules, translations, migrations, clinic configuration, reminders, and an Owl frontend. See the addon's `README.rst` for the current feature and verification status.
 
 The first engineering milestone is a clean, secure Odoo 19 port. Do not treat the downloaded addon as production-ready merely because its XML parses or it installs.
 
@@ -61,7 +61,7 @@ Do not expand V1 into hospitalization, surgery/anesthesia, laboratory or imaging
 
 ## Development and verification
 
-Before implementation, inspect the relevant addon code and the matching Odoo 19 APIs. The local checkout reports Odoo 19.0 with Python 3.10 as its minimum and PostgreSQL 13 as its minimum; the current machine has no configured Python/PostgreSQL environment, so establish and document a reproducible local setup before claiming install or integration-test results. Use a repository-local environment and ask before substantial or system-wide dependency installation.
+Before implementation, inspect the relevant addon code and the matching Odoo 19 APIs. The local checkout reports Odoo 19.0 with Python 3.10 as its minimum and PostgreSQL 13 as its minimum. A repository-local `.venv`, `.local/odoo.conf`, and `start.ps1` are present; their presence alone does not establish PostgreSQL availability or successful module installation. The root README records the startup command and prior version check. Verify and document a reproducible local setup before claiming install or integration-test results. Use a repository-local environment and ask before substantial or system-wide dependency installation.
 
 For each change:
 

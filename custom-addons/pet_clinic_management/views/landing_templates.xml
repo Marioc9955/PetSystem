@@ -1,0 +1,38 @@
+<odoo>
+    <template id="landing_icon">
+        <svg viewBox="0 0 48 48" fill="currentColor" aria-hidden="true">
+            <path t-if="icon == 'heart'" d="M24 41 6 23C-5 8 15-2 24 12 33-2 53 8 42 23Z"/>
+            <path t-elif="icon == 'plus'" d="M17 4H31V17H44V31H31V44H17V31H4V17H17Z"/>
+            <g t-else=""><ellipse cx="10" cy="18" rx="6" ry="8" transform="rotate(-25 10 18)"/><ellipse cx="22" cy="10" rx="6" ry="8"/><ellipse cx="35" cy="13" rx="6" ry="8" transform="rotate(20 35 13)"/><ellipse cx="42" cy="26" rx="5" ry="7" transform="rotate(30 42 26)"/><path d="M12 36C12 29 19 21 25 21S39 32 36 39C33 45 28 40 24 40S10 45 12 36Z"/></g>
+        </svg>
+    </template>
+    <template id="landing_page" name="Clinic Landing Page">
+        <t t-call="web.layout">
+            <t t-set="title" t-value="page.name"/><t t-set="html_data" t-value="{'lang': language.replace('_', '-')}"/><t t-set="body_classname" t-value="'pc-body'"/>
+            <t t-set="head"><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" t-att-content="page.description"/><meta t-if="preview" name="robots" content="noindex,nofollow"/><link rel="stylesheet" href="/pet_clinic_management/static/src/css/landing.css"/></t>
+            <div class="pc-landing" t-attf-style="--pc-primary:#{palette[0]};--pc-bg:#{palette[1]};--pc-ink:#{palette[2]}">
+                <a class="pc-skip" href="#content">Skip to content</a>
+                <div t-if="preview" class="pc-preview">Admin preview · Unpublished blocks are included</div>
+                <header class="pc-header pc-container">
+                    <a class="pc-brand" href="#"><img t-if="page.logo" t-att-src="image_data_uri(page.logo)" alt=""/><span t-else="" class="pc-brand-icon"><t t-call="pet_clinic_management.landing_icon"><t t-set="icon" t-value="'paw'"/></t></span><span t-out="page.name"/></a>
+                    <nav aria-label="Main navigation"><a href="#care">Our care</a><a href="#contact">Find us</a><a t-foreach="languages" t-as="code" t-attf-href="?lang=#{code}" t-att-lang="code.replace('_', '-')" t-att-aria-current="'true' if code == language else None"><t t-out="'ES' if code == 'es_EC' else 'EN'"/></a></nav>
+                    <a class="pc-button pc-header-cta" href="#contact" t-out="page.button_label"/>
+                </header>
+                <main id="content">
+                    <section class="pc-hero pc-container">
+                        <div class="pc-hero-copy"><p class="pc-eyebrow" t-out="page.eyebrow"/><h1 t-out="page.title"/><p class="pc-description" t-out="page.description"/><a t-if="page.button_label" class="pc-button" href="#contact"><t t-out="page.button_label"/><span aria-hidden="true"> ↗</span></a></div>
+                        <div class="pc-hero-art"><div class="pc-orbit"/><span class="pc-spark" aria-hidden="true">✦</span><img t-if="page.hero_image" t-att-src="image_data_uri(page.hero_image)" t-att-alt="page.hero_alt or ''" fetchpriority="high"/><div t-else="" class="pc-fallback"><t t-call="pet_clinic_management.landing_icon"><t t-set="icon" t-value="'paw'"/></t></div><span class="pc-floating-paw" aria-hidden="true"><t t-call="pet_clinic_management.landing_icon"><t t-set="icon" t-value="'paw'"/></t></span></div>
+                    </section>
+                    <section id="care" class="pc-care pc-container"><p class="pc-eyebrow">By their side, at every step</p><h2 t-out="page.services_title"/>
+                        <div class="pc-blocks"><article t-foreach="blocks" t-as="block" t-attf-class="pc-block pc-#{block.layout} pc-image-#{block.image_side}">
+                            <div t-if="block.image or block.layout == 'split'" class="pc-block-image"><img t-att-src="image_data_uri(block.image) if block.image else '/pet_clinic_management/static/src/img/pets-hero.png'" t-att-alt="block.image_alt or ''" loading="lazy"/></div>
+                            <div class="pc-block-copy"><span class="pc-icon"><t t-call="pet_clinic_management.landing_icon"><t t-set="icon" t-value="block.icon"/></t></span><p t-if="preview and not block.is_published" class="pc-draft">Hidden on public page</p><h3 t-out="block.name"/><p class="pc-prose" t-out="block.body"/><a t-if="block.button_url" class="pc-text-link" t-att-href="block.button_url"><t t-out="block.button_label"/><span aria-hidden="true"> ↗</span></a></div>
+                        </article></div>
+                    </section>
+                    <section id="contact" class="pc-contact pc-container"><div><p class="pc-eyebrow">Good care starts with a hello</p><h2 t-out="page.contact_title"/></div><p class="pc-prose" t-if="page.contact_text" t-out="page.contact_text"/><p t-else="">Contact details will be available soon.</p></section>
+                </main>
+                <footer class="pc-footer pc-container"><a class="pc-brand" href="#" t-out="page.name"/><p>For the love of little paws.</p><a href="#content">Back to top ↑</a></footer>
+            </div>
+        </t>
+    </template>
+</odoo>

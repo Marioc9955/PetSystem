@@ -1,0 +1,536 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Pet Clinic Management 19.0\n"
+"Language: es_EC\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,hero_alt:pet_clinic_management.landing_main
+msgid "A happy dog and a curious cat"
+msgstr "Un perro feliz y un gato curioso"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,name:pet_clinic_management.landing_care
+msgid "A healthy start"
+msgstr "Un comienzo saludable"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,body:pet_clinic_management.landing_banner
+msgid "A little care today makes space for tomorrow’s adventures."
+msgstr "Un poco de cuidado hoy abre paso a las aventuras de mañana."
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Admin preview · Unpublished blocks are included"
+msgstr "Vista previa del administrador · Incluye bloques sin publicar"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Back to top ↑"
+msgstr "Volver arriba ↑"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__background_color
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,name:pet_clinic_management.landing_story
+msgid "Big personalities. Gentle care."
+msgstr "Grandes personalidades. Cuidados con cariño."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__body
+msgid "Body"
+msgstr "Contenido"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Brand and hero"
+msgstr "Marca y portada"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__button_label
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__button_label
+msgid "Button Label"
+msgstr "Texto del botón"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__button_url
+msgid "Button Url"
+msgstr "Enlace del botón"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "By their side, at every step"
+msgstr "A su lado, en cada paso"
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,services_title:pet_clinic_management.landing_main
+msgid "Care for every little adventure"
+msgstr "Cuidado para cada pequeña aventura"
+
+#. module: pet_clinic_management
+#. odoo-python
+#: code:addons/pet_clinic_management/models/landing.py:0
+msgid ""
+"Choose colors with at least 4.5:1 contrast: white on primary, and text on "
+"both background and white."
+msgstr ""
+"Elige colores con un contraste mínimo de 4,5:1: blanco sobre el color "
+"principal y texto sobre el fondo y sobre blanco."
+
+#. module: pet_clinic_management
+#: model:ir.model,name:pet_clinic_management.model_vet_landing_block
+msgid "Clinic Landing Content Block"
+msgstr "Bloque de contenido de la clínica"
+
+#. module: pet_clinic_management
+#: model:ir.actions.act_window,name:pet_clinic_management.landing_action
+#: model:ir.model,name:pet_clinic_management.model_vet_landing_page
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Clinic Landing Page"
+msgstr "Página de la clínica"
+
+#. module: pet_clinic_management
+#. odoo-python
+#: code:addons/pet_clinic_management/models/landing.py:0
+msgid "Colors must use six-digit hex values, for example #23718A."
+msgstr ""
+"Los colores deben usar seis dígitos hexadecimales, por ejemplo #23718A."
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__contact_title
+msgid "Contact Title"
+msgstr "Título de contacto"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Contact details will be available soon."
+msgstr "Pronto encontrarás aquí nuestros datos de contacto."
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,button_label:pet_clinic_management.landing_banner
+msgid "Contact the clinic"
+msgstr "Contactar con la clínica"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Content Block"
+msgstr "Bloque de contenido"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__block_ids
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Content blocks"
+msgstr "Bloques de contenido"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__create_uid
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__create_date
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_page__palette__custom
+msgid "Custom"
+msgstr "Personalizada"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__display_name
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__eyebrow
+msgid "Eyebrow"
+msgstr "Frase introductoria"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Find us"
+msgstr "Encuéntranos"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "For the love of little paws."
+msgstr "Por amor a sus patitas."
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,body:pet_clinic_management.landing_care
+msgid ""
+"From first visits to everyday checkups, make room for a lifetime of happy "
+"moments."
+msgstr ""
+"Desde las primeras visitas hasta los controles de rutina, cuidamos una vida "
+"llena de momentos felices."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__layout__banner
+msgid "Full-width banner"
+msgstr "Franja de ancho completo"
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,button_label:pet_clinic_management.landing_main
+msgid "Get in touch"
+msgstr "Contáctanos"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Good care starts with a hello"
+msgstr "El buen cuidado empieza con un hola"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__name
+msgid "Heading"
+msgstr "Encabezado"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__icon__heart
+msgid "Heart"
+msgstr "Corazón"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,name:pet_clinic_management.landing_consultations
+msgid "Here to listen"
+msgstr "Estamos para escucharte"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__hero_alt
+msgid "Hero Alt"
+msgstr "Descripción de la imagen de portada"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__hero_image
+msgid "Hero Image"
+msgstr "Imagen de portada"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Hidden on public page"
+msgstr "Oculto en la página pública"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__id
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__icon
+msgid "Icon"
+msgstr "Ícono"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__image_alt
+msgid "Image Alt"
+msgstr "Descripción de la imagen"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__image_side
+msgid "Image Side"
+msgstr "Posición de la imagen"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__layout__split
+msgid "Image and text"
+msgstr "Imagen y texto"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__key
+msgid "Key"
+msgstr "Clave"
+
+#. module: pet_clinic_management
+#: model:ir.ui.menu,name:pet_clinic_management.landing_menu
+msgid "Landing Page"
+msgstr "Página pública"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__write_uid
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__write_date
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__layout
+msgid "Layout"
+msgstr "Diseño"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__image_side__left
+msgid "Left"
+msgstr "Izquierda"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,button_label:pet_clinic_management.landing_story
+msgid "Let’s meet"
+msgstr "Conozcámonos"
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,contact_title:pet_clinic_management.landing_main
+msgid "Let’s talk about your best friend."
+msgstr "Hablemos de tu mejor amigo."
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,eyebrow:pet_clinic_management.landing_main
+msgid "Little paws. A whole lot of love."
+msgstr "Patitas pequeñas. Amor inmenso."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__logo
+msgid "Logo"
+msgstr "Logotipo"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Main navigation"
+msgstr "Navegación principal"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__icon__plus
+msgid "Medical cross"
+msgstr "Cruz médica"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,name:pet_clinic_management.landing_banner
+msgid "More tail wags. More good days."
+msgstr "Más colitas felices. Más días juntos."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,help:pet_clinic_management.field_vet_landing_page__contact_text
+msgid ""
+"Only add information intended for public display: address, opening hours, "
+"phone and email."
+msgstr ""
+"Agrega solo información pública: dirección, horarios, teléfono y correo "
+"electrónico."
+
+#. module: pet_clinic_management
+#: model:ir.model.constraint,message:pet_clinic_management.constraint_vet_landing_page_single_page
+msgid "Only one clinic landing page is allowed."
+msgstr "Solo se permite una página pública por clínica."
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Open public page"
+msgstr "Abrir página pública"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Our care"
+msgstr "Nuestros cuidados"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__page_id
+msgid "Page"
+msgstr "Página"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__palette
+msgid "Palette"
+msgstr "Paleta"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__icon__paw
+msgid "Paw"
+msgstr "Huella"
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,name:pet_clinic_management.landing_main
+msgid "Pet Clinic"
+msgstr "Clínica Veterinaria"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Preview page"
+msgstr "Vista previa"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__primary_color
+msgid "Primary Color"
+msgstr "Color principal"
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid "Public address, phone, email and opening hours"
+msgstr "Dirección, teléfono, correo y horarios públicos"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__name
+msgid "Public clinic name"
+msgstr "Nombre público de la clínica"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__contact_text
+msgid "Public contact details"
+msgstr "Datos públicos de contacto"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__is_published
+msgid "Published"
+msgstr "Publicada"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,body:pet_clinic_management.landing_consultations
+msgid ""
+"Questions, little worries, or a change you have noticed. Let’s find the next"
+" step together."
+msgstr ""
+"Dudas, pequeñas preocupaciones o un cambio que has notado. Encontraremos "
+"juntos el siguiente paso."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__image_side__right
+msgid "Right"
+msgstr "Derecha"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_page__palette__sage
+msgid "Sage green"
+msgstr "Verde salvia"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__sequence
+msgid "Sequence"
+msgstr "Orden"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_block__layout__card
+msgid "Service card"
+msgstr "Tarjeta de servicio"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__services_title
+msgid "Services Title"
+msgstr "Título de servicios"
+
+#. module: pet_clinic_management
+#. odoo-python
+#: code:addons/pet_clinic_management/models/landing.py:0
+msgid "Set both a button label and a link, or leave both empty."
+msgstr "Completa el texto y el enlace del botón, o deja ambos vacíos."
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_page
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_page__palette__sky
+msgid "Sky blue"
+msgstr "Azul cielo"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,name:pet_clinic_management.landing_vaccines
+msgid "Small steps. Lasting care."
+msgstr "Pequeños pasos. Cuidado duradero."
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,body:pet_clinic_management.landing_vaccines
+msgid ""
+"Talk with our team about vaccinations and a preventive care plan for your "
+"pet."
+msgstr ""
+"Conversa con nuestro equipo sobre las vacunas y un plan de cuidado "
+"preventivo para tu mascota."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__text_color
+msgid "Text Color"
+msgstr "Color del texto"
+
+#. module: pet_clinic_management
+#: model:vet.landing.block,body:pet_clinic_management.landing_story
+msgid ""
+"The enthusiastic greeter. The cautious explorer. The expert napper. Every "
+"pet has their own way of being, and deserves care that feels right for them."
+msgstr ""
+"El que saluda con entusiasmo. El explorador cauteloso. El experto en "
+"siestas. Cada mascota tiene su forma de ser y merece cuidados a su medida."
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,title:pet_clinic_management.landing_main
+msgid "Their happy place. Your peace of mind."
+msgstr "Su lugar feliz. Tu tranquilidad."
+
+#. module: pet_clinic_management
+#: model_terms:ir.ui.view,arch_db:pet_clinic_management.landing_form
+msgid ""
+"This page contains public marketing content. Save changes before opening the"
+" preview. Changes to a published page go live immediately."
+msgstr ""
+"Esta página contiene información pública de la clínica. Guarda los cambios "
+"antes de abrir la vista previa. Los cambios en una página publicada se "
+"muestran de inmediato."
+
+#. module: pet_clinic_management
+#: model:vet.landing.page,description:pet_clinic_management.landing_main
+msgid ""
+"Thoughtful veterinary care for the ones who make your life a little "
+"brighter."
+msgstr ""
+"Atención veterinaria con cariño para quienes llenan tu vida de alegría."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_page__title
+msgid "Title"
+msgstr "Título"
+
+#. module: pet_clinic_management
+#. odoo-python
+#: code:addons/pet_clinic_management/models/landing.py:0
+msgid "Use an absolute https:// link or #contact."
+msgstr "Usa un enlace completo https:// o #contact."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,help:pet_clinic_management.field_vet_landing_block__button_url
+msgid "Use an https:// link or #contact."
+msgstr "Usa un enlace https:// o #contact."
+
+#. module: pet_clinic_management
+#: model:ir.model.constraint,message:pet_clinic_management.constraint_vet_landing_page_main_key
+msgid "Use the main clinic landing page."
+msgstr "Usa la página principal de la clínica."
+
+#. module: pet_clinic_management
+#: model:ir.model.fields,field_description:pet_clinic_management.field_vet_landing_block__is_published
+msgid "Visible on published page"
+msgstr "Visible en la página publicada"
+
+#. module: pet_clinic_management
+#: model:ir.model.fields.selection,name:pet_clinic_management.selection__vet_landing_page__palette__peach
+msgid "Warm peach"
+msgstr "Durazno cálido"

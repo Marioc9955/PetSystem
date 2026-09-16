@@ -22,6 +22,17 @@ $odooArguments = @($odooPath, '-c', $configPath, '-d', $Database)
 if ($Version) {
     $odooArguments += '--version'
 }
+else {
+    $httpPort = '8069'
+    foreach ($line in Get-Content -LiteralPath $configPath) {
+        if ($line -match '^\s*http_port\s*=\s*(\d+)\s*$') {
+            $httpPort = $Matches[1]
+            break
+        }
+    }
+
+    Start-Process "http://localhost:$httpPort"
+}
 
 Push-Location -LiteralPath $PSScriptRoot
 try {

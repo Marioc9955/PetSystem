@@ -1,6 +1,19 @@
 # PetSystem
 Sistema para control de una clínica veterinaria.
-Basado en odoo 19 y pet clinic management addon
+Basado en Odoo 19 Community Edition y el addon Pet Clinic Management.
+
+## Estado actual
+
+El addon incluye registros básicos de mascotas, citas, tratamientos, vacunas y
+recetas, con roles de recepción, veterinario y administrador. La interfaz usa
+vistas estándar de Odoo; todavía no hay un frontend personalizado con Owl.
+La preparación para producción está pendiente de verificación.
+
+- [Documentación del addon](custom-addons/pet_clinic_management/README.rst): funciones implementadas, permisos, pendientes y estado de pruebas.
+- [Guía de desarrollo](AGENTS.md): arquitectura, alcance y reglas del repositorio.
+
+El código del producto vive en `custom-addons/pet_clinic_management/`.
+`odoo-19.0/` contiene Odoo y se mantiene sin modificaciones.
 
 ## Inicio local (PowerShell)
 

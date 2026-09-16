@@ -1,0 +1,34 @@
+<odoo>
+    <record id="landing_form" model="ir.ui.view">
+        <field name="name">vet.landing.page.form</field><field name="model">vet.landing.page</field>
+        <field name="arch" type="xml">
+            <form string="Clinic Landing Page" create="0" delete="0">
+                <sheet>
+                    <div class="alert alert-info" role="status">This page contains public marketing content. Save changes before opening the preview. Changes to a published page go live immediately.</div>
+                    <group><field name="name"/><field name="is_published"/></group>
+                    <a href="/pet-clinic/preview" target="_blank" role="button" class="btn btn-primary">Preview page</a>
+                    <a href="/pet-clinic" target="_blank" role="button" class="btn btn-secondary ms-2">Open public page</a>
+                    <notebook>
+                        <page string="Brand and hero">
+                            <group><group><field name="logo" widget="image"/><field name="hero_image" widget="image"/><field name="hero_alt"/></group>
+                                <group><field name="eyebrow"/><field name="title"/><field name="description"/><field name="button_label"/><field name="services_title"/></group></group>
+                            <group><field name="palette"/><field name="primary_color" invisible="palette != 'custom'"/><field name="background_color" invisible="palette != 'custom'"/><field name="text_color" invisible="palette != 'custom'"/></group>
+                        </page>
+                        <page string="Content blocks">
+                            <field name="block_ids">
+                                <list><field name="sequence" widget="handle"/><field name="name"/><field name="layout"/><field name="is_published"/></list>
+                                <form string="Content Block"><group><field name="name"/><field name="is_published"/><field name="layout"/><field name="image_side" invisible="layout != 'split'"/><field name="icon"/><field name="body"/><field name="image" widget="image"/><field name="image_alt"/><field name="button_label"/><field name="button_url"/></group></form>
+                            </field>
+                        </page>
+                        <page string="Contact"><group><field name="contact_title"/><field name="contact_text" placeholder="Public address, phone, email and opening hours"/></group></page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="landing_action" model="ir.actions.act_window">
+        <field name="name">Clinic Landing Page</field><field name="res_model">vet.landing.page</field>
+        <field name="view_mode">form</field><field name="res_id" ref="landing_main"/>
+    </record>
+    <menuitem id="landing_menu" name="Landing Page" parent="vet_clinic_root" action="landing_action" groups="group_vet_administrator" sequence="90"/>
+</odoo>
